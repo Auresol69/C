@@ -6,6 +6,9 @@
 
 #define demo_h
 
+#include <stdio.h>
+#include <stdlib.h>
+
 int tong(int, int);
 int hieu(int, int);
 
