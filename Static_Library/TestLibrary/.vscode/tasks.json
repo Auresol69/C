@@ -17,10 +17,10 @@
                 // ----------------------------------------
                 // Tham số -I: Chỉ đường dẫn đến thư mục chứa file headers (.h)
                 "-I",
-                "D:/Lap_Trinh_C/C/Static_Library/mylib/Headers",
+                "E:/c/C/Static_Library/mylib/Headers",
                 // Tham số -L: Chỉ đường dẫn đến thư mục chứa file thư viện (.a)
                 "-L",
-                "D:/Lap_Trinh_C/C/Static_Library/mylib/Sources",
+                "E:/c/C/Static_Library/mylib/Sources",
                 // Tham số -l: Chỉ tên của thư viện (bỏ "lib" và ".a")
                 "-lmylib"
             ],
