@@ -1,0 +1,41 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc.exe build with mylib",
+            "command": "C:\\MinGW\\bin\\gcc.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                // Đường dẫn đến file nguồn của bạn
+                "${file}",
+                "-o",
+                // Tên file thực thi đầu ra
+                "${fileDirname}\\myprogram.exe",
+                // ----------------------------------------
+                // Cấu hình thêm thư viện tĩnh ở đây
+                // ----------------------------------------
+                // Tham số -I: Chỉ đường dẫn đến thư mục chứa file headers (.h)
+                "-I",
+                "D:/Lap_Trinh_C/C/Static_Library/mylib/Headers",
+                // Tham số -L: Chỉ đường dẫn đến thư mục chứa file thư viện (.a)
+                "-L",
+                "D:/Lap_Trinh_C/C/Static_Library/mylib/Sources",
+                // Tham số -l: Chỉ tên của thư viện (bỏ "lib" và ".a")
+                "-lmylib"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Task generated to link with mylib static library."
+        }
+    ],
+    "version": "2.0.0"
+}
